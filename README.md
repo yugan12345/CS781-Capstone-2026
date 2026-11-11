@@ -37,7 +37,7 @@ embeddings, and a 512-token context, and all sit inside the 50M–300M parameter
 | Masked encoder | 161.1M | 1.697 | document-level masking |
 | PaLM-style decoder | 181.0M | **2.232** | parallel attention/FFN block |
 | LLaMA-style decoder | 181.0M | 2.281 | sequential block |
-| Encoder–decoder | 128.4M | — | GQA 12:4, for Phase 6 |
+| Encoder–decoder | 128.4M | 2.4 | GQA 12:4, for Phase 6 |
 
 At equal parameter count the parallel block reached a lower loss than the sequential one,
 so the topology was an efficiency gain rather than a quality trade. Grouped-query attention
